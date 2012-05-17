@@ -16,7 +16,7 @@
     <div class="wrapper">
       <header>
         <h1>Artax</h1>
-        <p>A PHP5.4 engine for event-driven application design</p>
+        <p class="tagline">A PHP 5.4+ engine for event-driven, pluggable applications</p>
         <p class="view"><a href="https://github.com/rdlowrey/Artax">View the Project on GitHub <small>rdlowrey/Artax</small></a></p>
         <ul>
           <li><a href="https://github.com/rdlowrey/Artax/zipball/master">Download <strong>ZIP File</strong></a></li>
@@ -25,9 +25,28 @@
         </ul>
       </header>
       <section>
-        <h3>What Is Artax?</h3>
 
+<h2>What Is Artax?</h2>
 <p>Artax is a scaffolding layer for event-driven PHP 5.4+ applications.</p>
+
+<hr />
+
+<h3>Evented Applications</h3>
+<p>Artax provides a baseline for event-driven PHP applications. A Mediator 
+Pattern implementation queues chained event listeners, allowing them to 
+respond appropriately as new events occur.</p>
+
+<h3>Dependency Injection &amp; Lazy-Listeners</h3>
+<p>Artax uses an integrated Dependency Injection Container (DIC) in conjunction
+with the Mediator to lazy-load class-based event listeners. The container 
+uses a string-based system for instantiating and injecting dependencies as 
+needed.</p>
+
+<h3>Unified Error and Shutdown Handling</h3>
+<p>Artax abstracts away the details of PHP error handling, turning PHP errors,
+uncaught exceptions and fatal shutdowns into events to which listeners can 
+attach for gracefully handling abnormal program terminations.</p>
+
 
 <h3>Project Goals</h3>
 
@@ -38,21 +57,10 @@
 <li>Eschew <code>static</code> <em>completely</em> in favor of maximum testability, readability and API transparency;</li>
 <li>Favor OOP principles for complex applications while still supporting functional and lambda-based code;</li>
 <li>Build all components using SOLID, readable, documented and 100% unit-tested code.</li>
-</ul><h3>Evented Applications</h3>
+</ul>
 
-<p>Artax attempts to provide a baseline for event-driven PHP applications. A Mediator Pattern implementation queues chained event listeners, allowing them to respond appropriately as new events occur.</p>
-
-<h3>Dependency Injection &amp; Lazy-Listeners</h3>
-
-<p>Artax uses an integrated Dependency Injection Container (DIC) in conjunction with the Mediator to lazy-load class-based event listeners. The container uses a string-based system for instantiating and injecting dependencies as needed.</p>
-
-<h3>Unified Error and Shutdown Handling</h3>
-
-<p>Artax abstracts away the details of PHP error handling, turning PHP errors, uncaught exceptions and fatal shutdowns into events to which listeners can attach for gracefully handling abnormal program terminations.</p>
       </section>
       <footer>
-        <p>This project is maintained by <a href="https://github.com/rdlowrey">rdlowrey</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
