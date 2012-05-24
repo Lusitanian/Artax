@@ -17,12 +17,14 @@
       <header>
         <h1>Artax</h1>
         <p class="tagline">A PHP 5.3+ engine for event-driven, pluggable applications</p>
-        <p class="view"><a href="https://github.com/rdlowrey/Artax">View the Project on GitHub <small>rdlowrey/Artax</small></a></p>
+        <p style="font-size: 140%;"><a href="https://github.com/rdlowrey/Artax/wiki/Quickstart-Guide">Artax Quickstart Guide</a></p>
         <ul>
           <li><a href="https://github.com/rdlowrey/Artax/zipball/v0.4">Download <strong>v0.4 ZIP</strong></a></li>
           <li><a href="https://github.com/rdlowrey/Artax/tarball/v0.4">Download <strong>v0.4 TAR</strong></a></li>
           <li><a href="https://github.com/rdlowrey/Artax">View On <strong>GitHub</strong></a></li>
         </ul>
+        <p class="view"><a href="https://github.com/rdlowrey/Artax">View the Project on GitHub <small>rdlowrey/Artax</small></a></p>
+        
       </header>
       <section>
 
@@ -31,20 +33,20 @@
 
 <hr />
 
-<h3>Evented Applications</h3>
+<h3>Evented Applications <sup><a href="https://github.com/rdlowrey/Artax/wiki/Event-Management">wiki</a></sup></h3>
 <p>Artax provides a baseline for event-driven PHP applications. A Mediator 
 Pattern implementation queues chained event listeners, allowing them to 
 respond appropriately as new events occur.</p>
 
-<h3>Dependency Injection &amp; Lazy-Listeners</h3>
+<h3>Dependency Injection &amp; Lazy-Listeners <sup><a href="https://github.com/rdlowrey/Artax/wiki/Dependency-Injection">wiki</a></sup></h3>
 <p>Artax uses an integrated Dependency Injection Container (DIC) in conjunction
 with the Mediator to lazy-load class-based event listeners. The container 
 uses a string-based system for instantiating and injecting dependencies as 
 needed.</p>
 
-<h3>Unified Error and Shutdown Handling</h3>
+<h3>Unified Error, Exception &amp; Fatals Handling <sup><a href="https://github.com/rdlowrey/Artax/wiki/Error-Management">wiki</a></sup></h3>
 <p>Artax abstracts away the details of PHP error handling, turning PHP errors,
-uncaught exceptions and fatal shutdowns into events to which listeners can 
+uncaught exceptions and fatal errors into events to which listeners can 
 attach to gracefully handle unexpected program termination.</p>
 
 
@@ -58,6 +60,16 @@ attach to gracefully handle unexpected program termination.</p>
 <li>Favor OOP principles for complex applications while still supporting functional and lambda-based code;</li>
 <li>Build all components using SOLID, readable, documented and 100% unit-tested code.</li>
 </ul>
+
+<h3>Epilogue</h3>
+<p>
+If you don't have much experience developing object-oriented applications, 
+this may not be the right tool for you. There is no built-in MVC structure,
+though it should be trivial to implement an evented MVC application on top
+of the Artax-Core package. There are no "helper" libraries for generating
+emoticons or HTML forms: just a SOLID, readable, documented, unit-tested 
+scaffold for writing event-driven and pluggable PHP applications.
+</p>
 
       </section>
       <footer>
